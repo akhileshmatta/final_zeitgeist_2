@@ -44,6 +44,7 @@ export class HomeComponent {
   ngOnInit(){
   this.events = JSON.parse(localStorage.getItem('events') || "")
   this.events = this.events.map((val: any) => this.events_map[val]);
+  this.name = localStorage.getItem("name") || "";
 
   }
   home = () => this.router.navigateByUrl('/home');
