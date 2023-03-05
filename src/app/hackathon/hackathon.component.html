@@ -1,0 +1,112 @@
+<app-header></app-header>
+<div class="aaa2">
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-lg-8">
+      <!-- Post content-->
+      <article>
+        <!-- Post header-->
+        <header class="mb-4 mt-5">
+          <!-- Post title-->
+          <h1 class="fw-bolder mb-1">HACKATHON EVENT</h1>
+          <!-- Post meta content-->
+
+        </header>
+        <!-- Preview image figure-->
+        <figure class="mb-3">
+          <img
+            class="img-fluid rounded w-100"
+            src="assets/images/hackathon.jpg"
+            loading="lazy"
+            alt="..."
+          />
+        </figure>
+        <div class="text-center d-md-none">
+          <button *ngIf="name.length > 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+        </div>
+        <div class="text-center d-md-none">
+          <button *ngIf="name.length == 0" (click)="registration()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+        </div>
+        <!-- Post content-->
+        <section class="mb-5">
+          <h4 class="fw-bolder mb-3 mt-5">About</h4>
+          <p class="fs-6 mb-4">
+            A hackathon's aim is to generate an idea of concepts among participants. Hosts might search for potential prototypes that are good candidates for production or even hire a qualified and promising person for their teams.
+          </p>
+          <p class="fs-6 mb-4">
+            Zeitgeist_2K23, along with JNTU KAKINADA, brings forth the Hackathon event, that has garnered massive attention amongst the tech heads. This time, Hackathon is back to emphasize teamwork, learning, and innovation through the generation of novel technologies and prototypes that address significant concerns.
+          </p>
+          <h4 class="fw-bolder mb-3 mt-5">Event Format</h4>
+          <ul class="fs-6 mb-3">
+
+            <li>
+              2-4 participants per team allowed. OPEN FOR BOTH BOYS AND GIRLS TEAM.
+            </li>
+            <li>A real world problem  will be given to teams at the time of event along with particular time hours.</li>
+          </ul>
+          <h4 class="fw-bolder mb-3 mt-5">Registration Fee</h4>
+          <p class="fs-6 mb-3">The fee is <span class="fw-bold">₹400/-</span> per team.</p>
+          <h4 class="fw-bolder mb-3 mt-5">Topics</h4>
+          <p class="fs-6 mb-3">Topics will be announced once the participating teams are in the campus i.e(March 25 & 26)</p>
+          <h4 class="fw-bolder mb-3 mt-5">Instructions</h4>
+          <ul class="fs-6 mb-3">
+            <li>
+              Better register online , as spot registrations are very much
+              limited.
+            </li>
+            <li>
+              A maximum of four students per team are allowed and is open to students of any domain.
+            </li>
+
+            <li>
+              Feel free to reach out to the co-ordinators on any minute queries.
+            </li>
+            <li>
+              You can contact any time or mail your query to the provided
+              mail id or contact numbers.
+            </li>
+          </ul>
+          <h4 class="fw-bolder mb-3 mt-5">Prizes</h4>
+          <ul>
+            <li>
+              A certificate of excellence will be awarded for the top performing team.
+            </li>
+            <li>A cool zeitgeist merchandise will be given to the second best performing team</li>
+            <li>A certificate of participation will be awarded for all the participating teams.</li>
+          </ul>
+
+        </section>
+      </article>
+    </div>
+    <!-- Side widgets-->
+    <div class="col-lg-4 pa1">
+      <!-- Search widget-->
+
+      <!-- Categories widget-->
+
+      <!-- Side widget-->
+      <div class="card mb-4">
+        <div class="card-header aaa1">Contact Details</div>
+        <div class="card-body">
+          A.Pramod Kumar
+
+        </div>
+        <div class="card-body">
+          P. Sneha
+        </div>
+        <div class="card-body"><span class="fa fa-phone">&nbsp;8688104905</span></div>
+        <div class="card-body">
+          <span class="fa fa-envelope">&nbsp;hackathonzeitgeist@gmail.com</span>
+        </div>
+      </div>
+      <div class="text-center d-none d-md-block">
+        <button *ngIf="name.length > 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+      </div>
+      <div class="text-center d-none d-md-block">
+        <button *ngIf="name.length == 0" (click)="registration()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<app-footer></app-footer>

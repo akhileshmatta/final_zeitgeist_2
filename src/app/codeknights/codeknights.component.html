@@ -1,0 +1,157 @@
+<app-header></app-header>
+<div class="aaa2">
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- Post content-->
+        <article>
+          <!-- Post header-->
+          <header class="mb-4 mt-5">
+            <!-- Post title-->
+            <h1 class="fw-bolder mb-1">CODE KNIGHTS EVENT</h1>
+            <!-- Post meta content-->
+          </header>
+          <!-- Preview image figure-->
+          <figure class="mb-3">
+            <img
+              class="img-fluid rounded w-100"
+              loading="lazy"
+              src="assets/images/codeknights.jpg"
+              alt="..."
+            />
+          </figure>
+          <div class="text-center d-md-none">
+            <button
+              *ngIf="name.length > 0"
+              (click)="otherpay()"
+              type="button"
+              class="btn"
+              style="background-color: #07294f; color: aliceblue"
+            >
+              Register
+            </button>
+          </div>
+          <div class="text-center d-md-none">
+            <button
+              *ngIf="name.length == 0"
+              (click)="registration()"
+              type="button"
+              class="btn"
+              style="background-color: #07294f; color: aliceblue"
+            >
+              Register
+            </button>
+          </div>
+          <!-- Post content-->
+          <section class="mb-5">
+            <h4 class="fw-bolder mb-3 mt-5">About</h4>
+            <p class="fs-6 mb-4">
+              Coding is today's language of creativity, A Good code is short,
+              simple and symmetrical. Now, get ready to code in either Simple C
+              or portable C++ or Robust Java or Extensible Python. Showcase your
+              versatility for good programming to create an enthralling and
+              sublime snippet constituting the best performance measures. Hurry
+              up! Folks we are already in delay, it's time to celebrate a
+              dynamic Codeknights this year.
+            </p>
+
+            <h4 class="fw-bolder mb-3 mt-5">Event Format</h4>
+            <ul class="fs-6 mb-3">
+              <li>
+                Event is of two stages : Stage1(online mode) and further stages
+                will be conducted in offline mode.
+              </li>
+              <li>
+                Stage1 consists of easy level to medium level problems and
+                students who qualified in the stage1 are eligible to participate
+                in the second stage.
+              </li>
+              <li>
+                Final stage may contain multiple rounds in JNTUK campus and
+                consists of medium level to hard level problems
+              </li>
+              <li>
+                Exact Details like no.of.questions, no.of.selections, informing
+                the selected candidates will be intimated once you are on the
+                campus.
+              </li>
+            </ul>
+            <h4 class="fw-bolder mb-3 mt-5">Registration</h4>
+            <p class="fs-6 mb-3">
+              Registration fee is <span class="fw-bolder"> ₹ 350/-</span> per
+              member
+            </p>
+            <!-- <h4 class="fw-bolder mb-3 mt-5">Topics</h4>
+                  <p class = "fs-6 mb-4">Will be announced soon</p> -->
+
+            <h4 class="fw-bolder mb-3 mt-5">Instructions</h4>
+            <ul class="fs-6 mb-3">
+              <li>
+                Register online through the website, as spot registrations are
+                very much limited.
+              </li>
+              <li>
+                Participation is individual and is open to students of any
+                domain.
+              </li>
+              <li>
+                Try to be in contact with the co-ordinators in case of any
+                problem.
+              </li>
+              <!-- <li>Certificate of Coordination for the coordinators of the campus workshops.
+
+                      </li> -->
+              <li>
+                You can contact the co-ordinators at anytime or mail your query
+                to the mail id or contact numbers mentioned in this page.
+              </li>
+            </ul>
+
+            <h4 class="fw-bolder mb-3 mt-5">Prizes and Certification</h4>
+
+            <ul class="fs-6 mb-3">
+              <li>
+                Certificate Of Excellence will be awarded for the top coders
+                along with a cool Zeitgeist merchandise.
+              </li>
+              <li>
+                Certficate of Participation will be awarded for every
+                participant
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+      <!-- Side widgets-->
+      <div class="col-lg-4 pa1">
+        <!-- Search widget-->
+
+        <!-- Categories widget-->
+
+        <!-- Side widget-->
+        <div class="card mb-4">
+          <div class="card-header aaa1">Contact Details</div>
+          <div class="card-body">P. Maharaj</div>
+          <div class="card-body">D. Divya</div>
+          <div class="card-body">
+            <span class="fa fa-phone">&nbsp;6301887919</span>
+          </div>
+          <div class="card-body">
+            <a href="mailto:codeknightszeitgeist@gmail.com" style="color: black"
+              ><span class="fa fa-envelope"
+                >&nbsp;codeknightszeitgeist@gmail.com</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="text-center d-none d-md-block">
+          <button *ngIf="name.length > 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+        </div>
+        <div class="text-center d-none d-md-block">
+          <button *ngIf="name.length == 0" (click)="registration()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

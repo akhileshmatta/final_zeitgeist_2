@@ -1,0 +1,125 @@
+<app-header></app-header>
+<div class="aaa2">
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-lg-8">
+      <!-- Post content-->
+      <article>
+        <!-- Post header-->
+        <header class="mb-4 mt-5">
+          <!-- Post title-->
+          <h1 class="fw-bolder mb-1">PRESENTIT EVENT</h1>
+          <!-- Post meta content-->
+
+        </header>
+        <!-- Preview image figure-->
+        <figure class="mb-3">
+          <img
+            class="img-fluid rounded"
+            src="assets/images/paper2.jpg"
+            loading="lazy"
+            alt="..."
+          />
+        </figure>
+        <div class="text-center d-md-none">
+          <button *ngIf="name.length > 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+        </div>
+        <div class="text-center d-md-none">
+          <button *ngIf="name.length == 0" (click)="registration()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+        </div>
+        <!-- Post content-->
+        <section class="mb-5">
+          <h4 class="fw-bolder mb-3 mt-5">About</h4>
+          <p class="fs-6 mb-4">
+            Unveil your ideas and unfold your innovation through
+            <span class="fw-bolder">PRESENTIT</span> a Research paper
+            presentation event. It is a golden opportunity to present your
+            research work and innovative ideas with us. You will also get a
+            chance to present research papers in front of esteemed judges who
+            have experience in the field of research. So ZEITGEIST 2023 brings
+            you the event PRESENTIT which provides you a grandstand to share
+            your research and develop effective presentation skills. All you
+            need to do is to select a domain specified below and present a
+            research paper using any trending technology. The number of papers
+            you present will help you in exploring hidden talents and you can
+            notice a positive difference in yourself.
+          </p>
+          <h4 class="fw-bolder mb-3 mt-5">Event Format</h4>
+          <ul class="fs-6 mb-3">
+            <li>
+              Intially you need to submit the Title, Abstract,
+              Keywords, and Authors in a single page in pdf format to the mail
+              address <span class="fw-bold">presentitzeitgeist@gmail.com</span> at the time of registration.
+            </li>
+            <li>
+              The pdf mailed at the time of registration is reviewed prior to the event. No resubmission is entertained.
+            </li>
+            <li>
+              In the event stage you need to present the research paper along with PPT.
+            </li>
+
+          </ul>
+          <h4 class="fw-bolder mb-3 mt-5">Guidelines</h4>
+          <ul class="fs-6 mb-3">
+            <li>
+              Participation is individual and is open to students who are interested in presenting research papers related to the domain of Computer science.
+            </li>
+            <li>
+              You can submit your own work or you can extend the work in existing papers provided they are currently relevant.
+            </li>
+            <li>
+              The font type of the document should be in Times New Roman and the font size must be 10.
+            </li>
+            <li>The  research paper is to be submitted as a hard copy in the second stage.</li>
+            <li>The duration of the PPT presentation should be within 5 to 10 minutes. </li>
+            <li>You need to submit the pdf to the mail presentitzeitgeist@gmail.com in the first stage before the deadline i.e(20-03-2023).</li>
+          </ul>
+          <h4 class="fw-bolder mb-3 mt-5">Domain</h4>
+          <p class="fs-6 mb-3">Research Papers must be strictly related to the domain of Computer science and its applications.</p>
+          <h4 class="fw-bolder mb-3 mt-5">Registration Fee</h4>
+          <p class="fs-6 mb-3">Registration fee is <span class="fw-bolder"> ₹ 350/-</span> per paper</p>
+          <h4 class="fw-bolder mb-3 mt-5">Certification Policy</h4>
+          <ul class="fs-6 mb-3">
+            <li>Certificate Of Excellence will be awarded for the top three research papers which will be decided by JNTUK professors</li>
+            <li>Certficate of Participation will be awarded for every participant</li>
+            <li>The best research papers may get support for paper publication from JNTUK professors</li>
+            </ul>
+        </section>
+      </article>
+    </div>
+    <!-- Side widgets-->
+    <div class="col-lg-4 pa1">
+      <!-- Search widget-->
+
+      <!-- Categories widget-->
+
+      <!-- Side widget-->
+      <div class="card mb-4">
+        <div class="card-header aaa1">Contact Details</div>
+        <div class = "card-body">M. Akhilesh</div>
+        <div class="card-body">
+          T.J.V.Siva Lalitha
+
+        </div>
+        <div class="card-body">
+          G.Ruthwika
+          </div>
+        <div class = "card-body">
+          <span class="fa fa-phone">&nbsp;9390788858</span>
+        </div>
+        <div class="card-body">
+          <a href = "mailto:presentitzeitgeist@gmail.com" style = "color: black"><span class="fa fa-envelope">&nbsp;presentitzeitgeist@gmail.com</span></a>
+
+        </div>
+      </div>
+      <div class="text-center d-none d-md-block">
+        <button *ngIf="name.length > 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+      </div>
+      <div class="text-center d-none d-md-block">
+        <button *ngIf="name.length == 0" (click)="registration()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<app-footer></app-footer>

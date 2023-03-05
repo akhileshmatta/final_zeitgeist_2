@@ -1,0 +1,23 @@
+.pa1{
+  padding-top: 120px;
+}
+
+.aaa1{
+  background-color: #07294f;
+  color: aliceblue;
+}
+p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px !important;
+}
+li{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px !important;
+}
+
+
+.aaa2{
+  background: linear-gradient(#e3eef1,#d6dfe2);
+  /* padding-left: 120px;
+  padding-right: 120px; */
+}

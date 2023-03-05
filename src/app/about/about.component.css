@@ -1,0 +1,17 @@
+/* .pa1{
+  padding-top: 130px;
+  padding-bottom: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+} */
+*{
+  font-family: 'Times New Roman', Times, serif !important;
+
+}
+p{
+  font-size: 18px;
+}
+
+.aaa1{
+  background: linear-gradient(#e3eef1,#d6dfe2);
+}

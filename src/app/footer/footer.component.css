@@ -1,0 +1,29 @@
+.aa1{
+	text-align: justify;
+  text-justify: inter-word;
+}
+footer{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width:600px){
+  .aaa1{
+    display: none;
+  }
+
+}
+p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+span:hover{
+  cursor: pointer;
+  color: #5171ff !important;
+}
+
+.hh1:hover{
+  cursor: pointer;
+  color: #5171ff !important;
+}
+

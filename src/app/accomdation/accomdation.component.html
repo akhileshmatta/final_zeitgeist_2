@@ -1,0 +1,141 @@
+<app-header></app-header>
+<div class="container-fluid pt-5 aaa2">
+  <div class="row">
+    <div class="col-lg-8 pt-2 aa2 p-5">
+      <!-- Post content-->
+      <article>
+        <!-- Post header-->
+        <header class="mb-4 mt-5">
+          <!-- Post title-->
+          <h1 class="fw-bolder mb-1">Accommodations</h1>
+          <!-- Post meta content-->
+
+        </header>
+        <!-- Preview image figure-->
+        <figure class="mb-3">
+          <img
+            class="img-fluid rounded"
+            src="assets/images/accomdation.jpg"
+            alt="..."
+          />
+        </figure>
+        <div class="text-center d-md-none">
+          <button *ngIf="name.length > 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+        </div>
+        <div class="text-center d-md-none">
+          <button *ngIf="name.length == 0" (click)="registration()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+        </div>
+
+        <!-- Post content-->
+        <section class="mb-5">
+          <h4 class="fw-bolder mb-3 mt-5">About</h4>
+          <p class=" mb-4">
+            “ATHIDI DEVO BHAVA - The guest is equivalent to God”, Zeitgeist 2k23
+            regards this ardently as we firmly believe and focus on HOSPITALITY
+            and have been proving it so far. We promise you to continue the
+            same: from warm and generous reception , comfortable stay - to
+            bidding adieu, all here at the magnificent JNTUK campus . We
+            constantly strive towards every individual's contentment to make
+            this a home away from yours , with all the necessary amenities you
+            require ..from serving delicious cuisines to providing accommodation
+            in well ventilated ,safe and secured rooms with charging ports and
+            free wi-fi .This Zeitgeist 2k23,we considered your minutest
+            discomforts too and came up with a QR-NAVIGATION to help you route
+            effortlessly to your desired location in the entire JNTUK campus
+            without any hassle. So no worries folks! Gear up with your baggage!!
+            We are here to guide your every step...Awaiting your arrival…Team
+            Zeitgeist_2k23.
+          </p>
+          <h4 class="fw-bolder mb-3 mt-5">Instructions</h4>
+          <ul class="fs-6 mb-3">
+            <li>
+              Valid Photo Identity card of your current degree is mandatory.
+            </li>
+            <li>
+              After the payment, we generate a receipt(electronic/physical)
+              which, we request you to put handy to avoid any consequences of
+              unauthorized stay, while random checkings.
+            </li>
+            <li>
+              Every individual is provided with essential bedding. Other
+              accessories like blankets and pillows are not guaranteed.
+            </li>
+            <li class="fw-bold">
+              **Girls accommodation will be provided within the girls hostel of JNTUK campus**.
+            </li>
+            <li>
+              Alcohol, drugs, sharp objects and explosives of any kind are
+              strictly prohibited inside the campus. Any other item if deemed
+              unsafe will be prohibited. The decision of Security and ZEITGEIST
+              team will be final in case of any disputes.
+            </li>
+            <li>
+              All the guests are requested to maintain the decorum of the
+              institution to make it a safe and enjoyable stay.
+            </li>
+            <li>
+              All those who do not have accommodation inside the campus, will
+              not be allowed to stay in the campus after 10 P.M.
+            </li>
+            <li>
+              Only the guests having their accommodation in the campus will be
+              allowed in the campus premises after 10 P.M.
+            </li>
+          </ul>
+
+          <h4 class="fw-bolder mb-3 mt-5">Accomdation & Food charges</h4>
+          <p class=" mb-3">Food charges are <span class="fw-bold">₹400/- for Five Sessions (Including Non-Veg)</span></p>
+          <p class = "mb-3">Accommodation charges are <span class="fw-bold">₹300/- for two days.</span> </p>
+          <h4 class="fw-bolder mb-3 mt-5">Check In & Check Out</h4>
+          <p class=" mb-3">Check-In : 5 PM, 24th March.</p>
+          <p class=" mb-3">Check-Out : 5 PM, 26th March.</p>
+          <p><span class="fw-bold">NOTE: </span>For A/C Dormitories please contact Mithiles Chowdary before <span class="fw-bold">23-03-2023.</span></p>
+          <h4 class="fw-bolder mb-3 mt-5">Cancellation Policy</h4>
+          <ul class = "fs-6 mb-3">
+            <li>Confirmed Accommodation can be cancelled through email only.</li>
+            <li>Contact Mithilesh Chowdary if you want to cancel the accomdation through provided mail or phone</li>
+            <li>The subject of the email should be “ Cancellation of Accommodation ”</li>
+            <li>For any cancellations before deadline, 75% of the total amount shall be refunded within 3 working days after the fest.</li>
+            <li>There shall be no refunds for cancellation after the deadline.</li>
+            <li>Boys and girls will be given accommodation in different hostel.</li>
+            <li>You will receive a confirmation mail of payment within 24 hours.</li>
+          </ul>
+        </section>
+      </article>
+    </div>
+    <!-- Side widgets-->
+    <div class="col-lg-4 pa1">
+      <!-- Search widget-->
+
+      <!-- Categories widget-->
+
+      <!-- Side widget-->
+      <div class="card mb-4">
+        <div class="card-header aa2 a1">Contact Details</div>
+        <div class="card-body aa2">
+          B. Mithilesh Chowdary -
+          <span class="fa fa-phone"></span>&nbsp;79939960094
+        </div>
+        <div class="card-body aa2">
+          <span class="fa fa-envelope"></span>&nbsp; mightymithilesh333@gmail.com
+        </div>
+        <div class="card-body aa2">
+          M. Vamsi Krishna-
+          <span class="fa fa-phone"></span>&nbsp;8688414128
+        </div>
+        <div class="card-body aa2">
+          <span class="fa fa-envelope"></span>&nbsp; vamsimaram7007@gmail.com
+        </div>
+
+      </div>
+      <div class="text-center d-none d-md-block">
+        <button *ngIf="name.length > 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+      </div>
+      <div class="text-center d-none d-md-block">
+        <button *ngIf="name.length == 0" (click)="registration()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

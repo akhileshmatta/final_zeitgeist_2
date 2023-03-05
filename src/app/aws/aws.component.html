@@ -1,0 +1,162 @@
+<app-header></app-header>
+<div class="aaa2">
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- Post content-->
+        <article>
+          <!-- Post header-->
+          <header class="mb-4 mt-5">
+            <!-- Post title-->
+            <h1 class="fw-bolder mb-1">AWS Workshop</h1>
+            <!-- Post meta content-->
+            <div class="text-muted fst-italic mb-2" style="font-weight: bold">
+              ** Certifications from IIT-Bombay **<br />
+              ** Internships will be awarded will be provided based on
+              performance**
+            </div>
+          </header>
+          <!-- Preview image figure-->
+          <figure class="mb-3">
+            <img
+              loading="lazy"
+              class="img-fluid rounded"
+              src="assets/images/cloud (1).jpg"
+              alt="..."
+            />
+          </figure>
+          <div class="text-center d-md-none">
+            <button *ngIf="name.length > 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+          </div>
+          <div class="text-center d-md-none">
+            <button *ngIf="name.length == 0" (click)="registration()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+          </div>
+          <!-- Post content-->
+          <section class="mb-5">
+            <h4 class="fw-bolder mb-3 mt-5">About</h4>
+            <p class="fs-6 mb-4">
+              Amazon Web Services (AWS) is the world's most comprehensive and
+              broadly adopted cloud platform, offering over 200 fully featured
+              services from data centers globally. Millions of
+              customers—including the fastest-growing startups, largest
+              enterprises, and leading government agencies—are using AWS to
+              lower costs, become more agile, and innovate faster.
+            </p>
+            <h4 class="fw-bolder mb-3 mt-5">Objective</h4>
+            <p class="fs-6 mb-4">
+              The striving motto of this workshop is to provide a multi-faceted view and learnings of “ AWS Solution Architect” for the aspirants
+            </p>
+
+
+            <h4 class="fw-bolder mb-3 mt-5">Glimpses Of The Workshop</h4>
+            <p class="fs-6 mb-3">Session I- Introduction to cloud computing</p>
+            <!-- <ul class = "fs-6 mb-4">
+                    <li>Transformation in trading units.
+                    </li>
+                    <li>Cryptography and Crypto-currency
+                    </li>
+                    <li>Anonymity and Pseudonymity in Cryptocurrencies
+                    </li>
+                    <li>
+                      Digital Signatures
+                    </li>
+                    <li>
+                      Cryptocurrency Hash codes
+                    </li>
+                    <li>Peer to peer networks(structured and unstructured)</li>
+
+                  </ul> -->
+            <p class="fs-6 mb-3">Session II- Identity & Access Management</p>
+            <!-- <ul class = "fs-6 mb-4">
+                    <li> Introduction to Blockchain and its Origin.
+                    </li>
+                    <li>Why Blockchain is crucial and its objectives
+                    </li>
+                    <li>Anonymity and Pseudonymity in Cryptocurrencies
+                    </li>
+                    <li>
+                      Digital Signatures
+                    </li>
+                    <li>
+                      Cryptocurrency Hash codes
+                    </li>
+                    <li>Peer to peer networks(structured and unstructured)</li>
+
+                  </ul> -->
+            <p class="fs-6 mb-3">
+              Session III: Virtual Private Cloud
+            </p>
+            <p class="fs-6 mb-3">Session IV- Elastic IP Addresses</p>
+            <p class="fs-6 mb-3">
+              Session V: Elastic Cloud Compute (EC2)
+            </p>
+            <p class="fs-6 mb-3">Session VI- CloudFormation</p>
+
+            <h4 class="fw-bolder mb-3 mt-5">Registration</h4>
+            <p class="fs-6 mb-3">Workshop's registration fee is <span class="fw-bolder"> ₹1500/-  </span> per head </p>
+            <p class="fs-6 mb-3">Workshop's  registration fee for team of four candidates is <span class="fw-bolder"> ₹5500/-</span>  </p>
+
+            <h4 class="fw-bolder mb-3 mt-5">Duration</h4>
+            <p class="fs-6 mb-3">
+              The duration of this workshop will be two consecutive days, with 8 hr session each day in a total of 16 hours properly divided into theory and hands on sessions.
+            </p>
+            <h4 class="fw-bolder mb-3 mt-5">Highlights</h4>
+                    <p class = "fs-6 mb-3">A guaranteed internship with stipend will be provided to the participated students</p>
+            <h4 class="fw-bolder mb-3 mt-5">Certification Policy</h4>
+            <ul class="fs-6 mb-3">
+              <li>
+                Certificate of Merit for all the workshop participants from
+                <span class="fw-bolder">IIT Bombay</span> & Anvira Edustation.
+              </li>
+              <li>
+                At the end of this workshop, a small competition will be
+                organised among the participating students and winners will be
+                awarded with a 'Certificate of Excellence'.
+              </li>
+              <li>
+                Certificate of Coordination for the coordinators of the campus
+                workshops.
+              </li>
+            </ul>
+            <h4 class="fw-bolder mb-3 mt-5">Eligibility</h4>
+            <p class="fs-6 mb-3">
+              It's a basic level workshop so there are no prerequisites. Anyone
+              interested, can join this workshop.
+            </p>
+          </section>
+        </article>
+      </div>
+      <!-- Side widgets-->
+      <div class="col-lg-4 pa1">
+        <!-- Search widget-->
+
+        <!-- Categories widget-->
+
+        <!-- Side widget-->
+        <div class="card mb-4">
+          <div class="card-header aaa1">Contact Details</div>
+          <div class="card-body">B. Anudeep</div>
+          <div class="card-body">P. Ashwini</div>
+          <div class="card-body">
+            <a class="hh1" style="color: black;"><span class="fa fa-phone">&nbsp;9347874745</span></a>
+
+          </div>
+          <div class="card-body">
+            <a class ="hh1" href="mailto:awszeitgeist@gmail.com" style="color: black"
+              ><span class="fa fa-envelope"
+                >&nbsp;awszeitgeist@gmail.com</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="text-center d-none d-md-block">
+          <button *ngIf="name.length > 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+        </div>
+        <div class="text-center d-none d-md-block">
+          <button *ngIf="name.length == 0" (click)="registration()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

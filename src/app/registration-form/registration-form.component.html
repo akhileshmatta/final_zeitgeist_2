@@ -1,0 +1,284 @@
+<section
+  class="bg-image"
+  style="
+    background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');
+  "
+>
+  <div class="mask d-flex align-items-center h-100 gradient-cus pt-5">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Register For Zeitgeist</h2>
+
+              <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg"
+                    >Your Name</label
+                  >
+                  <input
+                    type="text"
+                    ngModel
+                    id="name"
+                    name="user_name"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example3cg"
+                    >Your Email</label
+                  >
+                  <input
+                    type="email"
+                    ngModel
+                    id="mail"
+                    name="user_mail"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cg"
+                    >Phone No.</label
+                  >
+                  <input
+                    type="tel"
+                    ngModel
+                    id="phone"
+                    name="phone_no"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example3cg"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    ngModel
+                    id="password"
+                    name="user_password"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example3cg"
+                    >Confirm Password</label
+                  >
+                  <input
+                    type="password"
+                    ngModel
+                    id="cpassword"
+                    name="cpassword"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cdg"
+                    >College Name</label
+                  >
+                  <input
+                    type="text"
+                    ngModel
+                    id="college_name"
+                    name="college_name"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cdg">City</label>
+                  <input
+                    type="text"
+                    ngModel
+                    id="city"
+                    name="city"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+
+                <div class="form-row">
+                  <label style="font: weight 1px; font-size: smaller"
+                    >&nbsp; Gender</label
+                  >
+                  <select
+                    name="gender"
+                    class="form-select"
+                    ngModel
+                    aria-label="Default select example"
+                  >
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="O">Other</option>
+                  </select>
+                </div>
+
+                <!-- <div class="form-outline my-4">
+                  <label class="form-label" for="form3Example1cg">Workshops</label>
+                  <hr class="under-line" />
+
+                <div class="form-row">
+                  <label style="font: weight 1px; font-size: smaller"
+                    >&nbsp; Select Workshop</label
+                  >
+                  <select
+                    name="workshop"
+                    class="form-select"
+                    ngModel
+                    aria-label="Default select example"
+                  >
+                    <option value="" selected>-- workshops --</option>
+                    <option value="BlockChain">BlockChain</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Cyber security">Ethical Hacking</option>
+                    <option value="aws">AWS</option>
+                  </select>
+                </div>
+
+                <div class="form-outline my-4">
+                  <label class="form-label" for="form3Example1cg">Events</label>
+                  <hr class="under-line" />
+                  </div>
+                  <p class="tevent-heading">Technical Events</p>
+                  <div class="technical-event-container mb-3">
+                    <div class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        ngModel
+                        id="hackathon"
+                        name="hackathon"
+                      />
+                      <label class="tevent-title" for="tevent1">Hackathon</label>
+                    </div>
+                    <div class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        ngModel
+                        id="codeknights"
+                        name="codeknights"
+                      />
+                      <label class="tevent-title" for="tevent2">Code Knights</label>
+                    </div>
+                    <div class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        ngModel
+                        id="bughunt"
+                        name="bughunt"
+                      />
+                      <label class="tevent-title" for="tevent3">Bug Hunt</label>
+                    </div>
+                    <div class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        ngModel
+                        id="projekto"
+                        name="projekto"
+                      />
+                      <label class="tevent-title" for="tevent3">Projekto</label>
+                    </div>
+                    <div class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        ngModel
+                        id="presentit"
+                        name="presentit"
+                      />
+                      <label class="tevent-title" for="tevent3">PresentIt</label>
+                    </div>
+                    <div class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        ngModel
+                        id="geekout"
+                        name="geekout"
+                      />
+                      <label class="tevent-title" for="tevent3">Geek OUt</label>
+                    </div>
+                    <div class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        ngModel
+                        id="techtalk"
+                        name="techtalk"
+                      />
+                      <label class="tevent-title" for="tevent3">Tech Talk</label>
+                    </div>
+                  </div>
+                  <p class="ntevent-heading">Online Events</p>
+                  <div class="non-technical-event-container mb-3">
+                    <div class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        ngModel
+                        id="brainit"
+                        name="brainit"
+                      />
+                      <label class="ntevent-title" for="ntevent1">Brain It</label>
+                    </div>
+                    <div class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        ngModel
+                        id="codewars"
+                        name="codewars"
+                      />
+                      <label class="ntevent-title" for="ntevent2">Code Wars</label>
+                    </div>
+                    <div class="checkbox-container">
+                      <input
+                        type="checkbox"
+                        ngModel
+                        id="webdev"
+                        name="webdev"
+                      />
+                      <label class="ntevent-title" for="ntevent3">WebDev Challenge</label>
+                    </div>
+                  </div>
+                </div> -->
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg"
+                    >Referral Code(optional)</label
+                  >
+                  <input
+                    type="text"
+                    ngModel
+                    id="used_referal"
+                    name="used_referal"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+
+
+
+                <div class="d-flex justify-content-center mt-3">
+                  <input
+                    type="submit"
+                    name="register"
+                    class="register btn btn-primary"
+                    value="Submit"
+                  />
+                </div>
+
+
+                <p class="text-center text-muted mt-5 mb-0">
+                  Have already an account?
+                  <a href="login()" class="fw-bold text-body"><u>Login</u></a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+

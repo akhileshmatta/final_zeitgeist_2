@@ -1,0 +1,26 @@
+import { Component, ElementRef, Directive } from '@angular/core';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-codewars',
+  templateUrl: './codewars.component.html',
+  styleUrls: ['./codewars.component.css']
+})
+export class CodewarsComponent {
+  name : string = ""
+  constructor ({nativeElement}: ElementRef<HTMLImageElement>,private router:Router ){
+    const supports = 'loading' in HTMLImageElement.prototype;
+
+
+  if (supports){
+    nativeElement.setAttribute('loading', 'lazy');
+  }
+
+}
+ngOnInit(){
+
+  this.name =  localStorage.getItem('name') || ""
+
+}
+otherpay = () => this.router.navigateByUrl('/otherpay');
+}

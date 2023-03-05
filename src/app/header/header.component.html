@@ -1,0 +1,168 @@
+
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="margin: top 40px; background-color:#053955 ;">
+
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+		<img
+        src="assets/images/LOGO.jpg"
+		style="padding-bottom: 10px;"
+        height="80"
+      />
+      <span class="ml-3 " style="color:white; font-family:'Courier New', monospace; font-weight: 545; font-size: 20px;"><span style="font-size: 40PX; font-weight: 750;  font-family: 'Courier New', monospace;">ZEITGEIST</span> TechFest</span>
+    </a>
+    <button
+      class="navbar-toggler navbar-toggler-right border-0"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbar4"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar4">
+      <ul class="navbar-nav mr-auto pl-lg-4">
+        <li class="nav-item px-lg-2 active">
+          <label style = "color: white;" class="nav-link" href="#" (click)="home()">
+            <span class="d-inline-block d-lg-none icon-width"
+              ></span
+            >HOME</label
+          >
+        </li> -->
+        <!-- <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-spa"></i></span>Services</a> </li> -->
+        <!-- <li class="nav-item px-lg-2 active">
+          <label style="color: white;"class="nav-link" href="#" (click)="about()"
+            ><span  class="d-inline-block d-lg-none icon-width"
+              ></span
+            >ABOUT</label
+          >
+        </li>
+
+        <li class="nav-item px-lg-2 dropdown d-menu active">
+          <a
+            class="nav-link dropdown-toggle"
+            style="color: white;"
+            href="#"
+            id="dropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            ><span class="d-inline-block d-lg-none icon-width"
+              ></span
+            >EVENTS▼
+          </a>
+          <div
+            class="dropdown-menu shadow-sm sm-menu"
+            aria-labelledby="dropdownMenuLink"
+          > -->
+            <!-- <label class="dropdown-item" href="#" (click)="equipment()"
+              >Scientific Equipment And Supplies</label
+            > -->
+            <!-- <label class="dropdown-item hvr" (click)="technical_events()">Technical Events</label>
+            <label class="dropdown-item"  (click)="non_technical_events()" >Non-Technical Events</label> -->
+            <!-- <label class="dropdown-item" href="#" (click)="management()">IT Management Support</label> -->
+          <!-- </div>
+        </li>
+
+
+        <li class="nav-item px-lg-2 active">
+          <label style="color: white;" class="nav-link" href="#" (click)="workshops()"
+            ><span class="d-inline-block d-lg-none icon-width"
+              ><i></i></span
+            >WORKSHOPS</label
+          >
+        </li>
+        <li class="nav-item px-lg-2 active">
+          <label style="color: white;" class="nav-link" href="#" (click)="gallery()"
+            ><span class="d-inline-block d-lg-none icon-width"
+              ><i></i></span
+            >GALLERY</label
+          >
+        </li>
+        <li class="nav-item px-lg-2 active">
+          <label style="color: white;" class="nav-link" href="#" (click)="sponsors()"
+            ><span class="d-inline-block d-lg-none icon-width"
+              ><i></i></span
+            >SPONSERS</label
+          >
+        </li>
+        <li class="nav-item px-lg-2 active">
+          <label style="color: white;" class="nav-link" href="#" (click)="contact()"
+            ><span class="d-inline-block d-lg-none icon-width"
+              ><i></i></span
+            >CONTACT US</label
+          >
+        </li>
+      </ul>
+      <button type="button" class="btn btn-dark">Login/Register</button>
+    </div>
+  </div>
+</nav> -->
+
+
+
+<header id="header" class="fixed-top d-flex align-items-center ">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <div class="logo">
+      <h1 class="text-light" style="font-family: 'Courier New', Courier, monospace !important;"><img loading="lazy" class = "mr-2" src="assets/images/Zeitgeist_Logo.png" width="40" height="200"/><span> Zeitgeist</span></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    </div>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <!-- <li *ngIf="name.length > 0"><span class="text-light" style="font-size: large; font-family: monospace"> Welcome {{name}}</span> -->
+        <li><span (click)="home()"class = "ll1">Home </span></li>
+        <li><span (click)="about()"class = "ll1">About </span></li>
+        <li><span (click)="workshops()"class = "ll1">Workshops </span></li>
+        <li class="dropdown" data-hover="dropdown-toggle" data-toggle="dropdown"><a><span class="ll3">Events<span style="font-size: 13px;">▼</span></span><i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><span class="ll1 ll2" (click)="technical_events()">Technical Events</span></li>
+
+            <li><span class="ll1 ll2" (click)="onlineevents()">Online Events</span></li>
+          </ul>
+        </li>
+        <li><span class="ll1" (click)="contests()">Contests</span></li>
+
+        <li><span class="ll1" (click)="accomdation()">Accommodation</span></li>
+        <li><span class="ll1" (click)="sponsors()">Sponsors</span></li>
+        <li><span class="ll1" (click)="gallery()">Gallery</span></li>
+        <li><span class="ll1" (click)="contact()">Contact Us</span></li>
+        <li *ngIf="name.length > 0" class="dropdown"><a><span class="ll3">My Profile<span style="font-size: 13px;">▼</span></span><i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><span class="ll1 ll2" (click)="registeredevents()">Registered Events</span></li>
+          </ul>
+        </li>
+
+
+      </ul>
+       <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+    <div class="btn-group" id="aa1">
+      <button type="button" class="btn dropdown-toggle " style = "color: white;"data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-solid fa-2x fa-bars"></i>
+      </button>
+      <ul class="dropdown-menu">
+        <li><span class="dropdown-item l11" (click)="home()">Home</span></li>
+          <li><span class="dropdown-item l11" (click)="about()">About</span></li>
+          <li><span class="dropdown-item l11" (click)="workshops()">Workshops</span></li>
+          <li><span class="dropdown-item l11" (click)="technical_events()">Technical Events</span></li>
+          <li><span class="dropdown-item l11" (click)="onlineevents()">Online Events</span></li>
+          <li><span class="dropdown-item l11" (click)="contests()">Contests</span></li>
+          <li><span class="dropdown-item l11" (click)="accomdation()">Accommodation</span></li>
+          <li><span class="dropdown-item l11" (click)="sponsors()">Sponsors</span></li>
+          <li><span class="dropdown-item l11" (click)="gallery()">Gallery</span></li>
+          <li><span class="dropdown-item l11" (click)="contact()">Contact Us</span></li>
+          <li *ngIf="name.length > 0"><span class="dropdown-item l11" (click)="logout()">Logout</span></li>
+
+      </ul>
+    </div>
+
+  </div>
+</header>
+
+
+

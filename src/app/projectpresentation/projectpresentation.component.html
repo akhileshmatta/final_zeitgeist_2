@@ -1,0 +1,154 @@
+<app-header></app-header>
+<div class="aaa2">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- Post content-->
+        <article>
+          <!-- Post header-->
+          <header class="mb-4 mt-5">
+            <!-- Post title-->
+            <h1 class="fw-bolder mb-1">PROJEKTO EVENT</h1>
+            <!-- Post meta content-->
+          </header>
+          <!-- Preview image figure-->
+          <figure class="mb-3">
+            <img
+              class="img-fluid rounded"
+              src="assets/images/pp2.jpg"
+              loading="lazy"
+              alt="..."
+            />
+          </figure>
+          <div class="text-center d-md-none">
+            <button
+              *ngIf="name.length > 0"
+              (click)="otherpay()"
+              type="button"
+              class="btn"
+              style="background-color: #07294f; color: aliceblue"
+            >
+              Register
+            </button>
+          </div>
+          <div class="text-center d-md-none">
+            <button
+              *ngIf="name.length == 0"
+              (click)="registration()"
+              type="button"
+              class="btn"
+              style="background-color: #07294f; color: aliceblue"
+            >
+              Register
+            </button>
+          </div>
+          <!-- Post content-->
+          <section class="mb-5">
+            <h4 class="fw-bolder mb-3 mt-5">About</h4>
+            <p class="fs-6 mb-4">
+              We bring you "PROJEKTO" to enhance your ability to deliver demos
+              on your projects. It allows individuals to showcase their
+              creativity and gain knowledge from the student community. Besides
+              allowing the sharing of projects, PROJEKTO creates a platform for
+              networking with like-minded people.
+            </p>
+
+            <h4 class="fw-bolder mb-3 mt-5">Event Format</h4>
+            <ul class="fs-6 mb-3">
+
+              <li>
+                The participating teams will showcase their projects in JNTUK campus along with demonstration during Zeitgeist_23.
+              </li>
+            </ul>
+            <h4 class="fw-bolder mb-3 mt-5">Registration Fee</h4>
+            <p class="fs-6 mb-3">
+              The registration fee is
+              <span class="fw-bolder"> ₹ 350/- </span> per project
+            </p>
+
+            <h4 class="fw-bolder mb-3 mt-5">Instructions</h4>
+            <ul class="fs-6 mb-3">
+              <li>Projects should be related to computer science domain only.</li>
+              <li>
+                Abstract of the project should be submitted prior i.e(20-03-2023) to the mail
+                <span class="fw-bold">projekto.zeitgeist@gmail.com</span>.
+              </li>
+              <li>Team limit: The team should contain 1-3 members.</li>
+              <li>
+                The winner will be decided by our JNTUK Professor team.
+              </li>
+
+              <li>
+                The competitors are required to prepare the presentations on
+                your project and that must be related to emerging and popular
+                technologies in Computer Science.
+              </li>
+            </ul>
+
+            <h4 class="fw-bolder mb-3 mt-5">Prizes and Certification</h4>
+            <p class="fs-6 mb-4">
+
+            </p>
+            <ul class="fs-6 mb-3">
+              <li>
+                Certificate Of Excellence will be awarded for the top three
+                projects which will be decided by JNTUK team
+              </li>
+              <li> A cool Zeitgeist merchandise will be awarded for the best project.</li>
+              <li>
+                Certficate of Participation will be awarded for every
+                participant.
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+      <!-- Side widgets-->
+      <div class="col-lg-4 pa1">
+        <!-- Search widget-->
+
+        <!-- Categories widget-->
+
+        <!-- Side widget-->
+        <div class="card mb-4">
+          <div class="card-header aaa1">Contact Details</div>
+          <div class="card-body">J. Balakrishna</div>
+          <div class="card-body">P. Sireesha</div>
+          <div class="card-body">
+            <span class="fa fa-phone">&nbsp;7286924380</span>
+          </div>
+          <div class="card-body">
+            <a href="mailto:projekto.zeitgeist@gmail.com" style="color: black"
+              ><span class="fa fa-envelope"
+                >&nbsp;projekto.zeitgeist@gmail.com</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="text-center d-none d-md-block">
+          <button
+            *ngIf="name.length > 0"
+            (click)="otherpay()"
+            type="button"
+            class="btn"
+            style="background-color: #07294f; color: aliceblue"
+          >
+            Register
+          </button>
+        </div>
+        <div class="text-center d-none d-md-block">
+          <button
+            *ngIf="name.length == 0"
+            (click)="registration()"
+            type="button"
+            class="btn"
+            style="background-color: #07294f; color: aliceblue"
+          >
+            Register
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
