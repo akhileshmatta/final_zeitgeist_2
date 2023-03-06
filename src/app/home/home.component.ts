@@ -48,8 +48,8 @@ export class HomeComponent {
     let data : any = urlParams.get('q') || ""
     console.log(urlParams)
     console.log(data)
-    let dt = localStorage.getItem("q") || ""
-    if(dt.length == 0){
+    //let dt = localStorage.getItem("q") || ""
+    if(data.length != 0){
       localStorage.setItem('q', data)
     }
 
