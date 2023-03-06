@@ -130,7 +130,9 @@
         <li><span class="ll1" (click)="sponsors()">Sponsors</span></li>
         <li><span class="ll1" (click)="gallery()">Gallery</span></li>
         <li><span class="ll1" (click)="contact()">Contact Us</span></li>
-        <li *ngIf="name.length > 0" class="dropdown" ><a><span class="ll3">My Profile<span style="font-size: 13px;">▼</span></span><i class="bi bi-chevron-down"></i></a>
+        <li><a *ngIf="name.length == 0" class="ll5" style="  font-family: 'Times New Roman', Times, serif; font-size: 18px;
+          " href="https://zeitgeistjntuk.com/api/userlogin">Login</a></li>
+        <li *ngIf="name.length != 0" class="dropdown" ><a><span class="ll3">My Profile<span style="font-size: 13px;">▼</span></span><i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><span class="ll1 ll2" (click)="registeredevents()">Registered Events</span></li>
           </ul>
@@ -156,8 +158,10 @@
           <li><span class="dropdown-item l11" (click)="sponsors()">Sponsors</span></li>
           <li><span class="dropdown-item l11" (click)="gallery()">Gallery</span></li>
           <li><span class="dropdown-item l11" (click)="contact()">Contact Us</span></li>
-          <li *ngIf="name.length > 0"><span class="dropdown-item ll1" (click)="registeredevents()">Registered Events</span></li>
-          <li *ngIf="name.length > 0"><span class="dropdown-item l11" (click)="logout()">Logout</span></li>
+          <a *ngIf="name.length == 0" style="text-decoration: none;" href="https://zeitgeistjntuk.com/api/userlogin"><li><span class="dropdown-item l11">Login</span></li></a>
+
+          <li *ngIf="name.length != 0"><span class="dropdown-item ll1" (click)="registeredevents()">Registered Events</span></li>
+          <li *ngIf="name.length != 0"><span class="dropdown-item l11" (click)="logout()">Logout</span></li>
 
       </ul>
     </div>

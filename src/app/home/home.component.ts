@@ -75,12 +75,15 @@ export class HomeComponent {
   accomdation = () => this.router.navigateByUrl('/accomdation');
   login = () => {
     localStorage.clear()
-    this.router.navigateByUrl('https://zeitgestjntuk.com/api/userlogin');
+    let url_2 = 'https://zeitgestjntuk.com/api/userlogin'
+    this.router.navigateByUrl(url_2);
     //window.URL = 'https://zeitgestjntuk.com/api/userlogin'
   }
   logout = () => {
-    localStorage.clear()
+    //let url_ = 'https://zeitgeistjntuk.com/api/userlogin'
     this.router.navigateByUrl('/')
+    localStorage.clear()
+
 }
 contests = () => this.router.navigateByUrl('/contests');
 registeredevents = () => this.router.navigateByUrl('/registeredevents');

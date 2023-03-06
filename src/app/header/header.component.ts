@@ -49,7 +49,7 @@ export class HeaderComponent implements OnInit {
 
   logout = () => {
     localStorage.clear()
-    this.router.navigateByUrl('/home')
+    this.router.navigateByUrl('/')
 }
 login = () => {
     this.router.navigateByUrl('/login')

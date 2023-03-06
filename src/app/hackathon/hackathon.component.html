@@ -22,10 +22,10 @@
           />
         </figure>
         <div class="text-center d-md-none">
-          <button *ngIf="name.length > 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+          <button *ngIf="name.length != 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register for Event</button>
         </div>
         <div class="text-center d-md-none">
-          <a href="https://zeitgeistjntuk.com/api/userRegister"><button *ngIf="name.length == 0"  type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
+          <a *ngIf="name.length == 0" href="https://zeitgeistjntuk.com/api/userRegister"><button   type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
 
         </div>
         <!-- Post content-->
@@ -96,15 +96,15 @@
           P. Sneha
         </div>
         <div class="card-body"><span class="fa fa-phone">&nbsp;8688104905</span></div>
-        <div class="card-body">
-         <a href="mailto:hackathonzeitgeist@gmail.com" target="_blank">&nbsp;hackathonzeitgeist@gmail.com</a> <span class="fa fa-envelope"></span>
+        <div class="card-body"><span class="fa fa-envelope"></span>
+         <a href="mailto:hackathonzeitgeist@gmail.com" style="text-decoration: none; color: black;" target="_blank">&nbsp;hackathonzeitgeist@gmail.com</a>
         </div>
       </div>
       <div class="text-center d-none d-md-block">
-        <button *ngIf="name.length > 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+        <button *ngIf="name.length != 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register for Event</button>
       </div>
       <div class="text-center d-none d-md-block">
-        <a href="https://zeitgeistjntuk.com/api/userRegister"><button *ngIf="name.length == 0" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
+        <a *ngIf="name.length == 0" href="https://zeitgeistjntuk.com/api/userRegister"><button  type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
 
       </div>
     </div>

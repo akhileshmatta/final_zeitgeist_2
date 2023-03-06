@@ -370,6 +370,19 @@
   color: #5171ff;
 }
 
+.ll5{
+  text-decoration: none;
+  color:#fff;
+  padding-left: 25px;
+  font-size: 17px;
+}
+
+.ll5:hover{
+  cursor: pointer;
+  color: #5171ff;
+}
+
+
 
 .ll1{
   font-family: 'Times New Roman', Times, serif;

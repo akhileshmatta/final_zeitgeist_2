@@ -22,6 +22,7 @@ export class AwsComponent {
   //console.log(JSON.parse(data))
   let data = JSON.parse(localStorage.getItem("q") || "")
   this.name = data?.user_details.user_name || "";
+  //console.log(this.name);
 
     //this.name =  sessionStorage.getItem('name') || ""
    }

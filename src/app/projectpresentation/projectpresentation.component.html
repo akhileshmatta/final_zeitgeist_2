@@ -127,18 +127,18 @@
         </div>
         <div class="text-center d-none d-md-block">
           <button
-            *ngIf="name.length > 0"
+            *ngIf="name.length != 0"
             (click)="otherpay()"
             type="button"
             class="btn"
             style="background-color: #07294f; color: aliceblue"
           >
-            Register
+            Register for Event
           </button>
         </div>
         <div class="text-center d-none d-md-block">
-          <a href="https://zeitgeistjntuk.com/api/userRegister"><button
-            *ngIf="name.length == 0"
+          <a  *ngIf="name.length == 0" href="https://zeitgeistjntuk.com/api/userRegister"><button
+
             type="button"
             class="btn"
             style="background-color: #07294f; color: aliceblue"
