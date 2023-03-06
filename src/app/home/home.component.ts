@@ -1,14 +1,14 @@
 //import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
-import { Component, AfterViewInit, ElementRef, ViewChild, Directive, asNativeElements } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChild, Directive, asNativeElements, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
 
   name: string = ""
   events : any = ""

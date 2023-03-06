@@ -1,4 +1,4 @@
-import { Component, Directive, ElementRef } from '@angular/core';
+import { Component, Directive, ElementRef, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './techtalk.component.html',
   styleUrls: ['./techtalk.component.css']
 })
-export class TechtalkComponent {
+export class TechtalkComponent implements OnInit{
  name: string = ""
    ngOnInit(){
      //this.name =  localStorage.getItem('name') || ""

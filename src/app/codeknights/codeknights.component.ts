@@ -1,4 +1,4 @@
-import { Component, ElementRef, Directive } from '@angular/core';
+import { Component, ElementRef, Directive, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './codeknights.component.html',
   styleUrls: ['./codeknights.component.css']
 })
-export class CodeknightsComponent {
+export class CodeknightsComponent implements OnInit{
  name: string = ""
    ngOnInit(){
      //this.name =  localStorage.getItem('name') || ""

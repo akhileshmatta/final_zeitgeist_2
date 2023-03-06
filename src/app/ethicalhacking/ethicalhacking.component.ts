@@ -1,4 +1,4 @@
-import { Component, ElementRef, Directive } from '@angular/core';
+import { Component, ElementRef, Directive,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './ethicalhacking.component.html',
   styleUrls: ['./ethicalhacking.component.css']
 })
-export class EthicalhackingComponent {
+export class EthicalhackingComponent implements OnInit{
   name: string = ""
   ngOnInit(){
     //this.name =  localStorage.getItem('name') || ""

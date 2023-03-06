@@ -1,4 +1,4 @@
-import { Component, ElementRef, Directive } from '@angular/core';
+import { Component, ElementRef, Directive, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './webdev.component.html',
   styleUrls: ['./webdev.component.css']
 })
-export class WebdevComponent {
+export class WebdevComponent implements OnInit{
   name : string = "";
   constructor ({nativeElement}: ElementRef<HTMLImageElement>, private router:Router){
     const supports = 'loading' in HTMLImageElement.prototype;

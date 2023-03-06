@@ -1,4 +1,4 @@
-import { Component, ElementRef, Directive} from '@angular/core';
+import { Component, ElementRef, Directive, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 
@@ -7,7 +7,7 @@ import { Location } from '@angular/common';
   templateUrl: './blockchain.component.html',
   styleUrls: ['./blockchain.component.css']
 })
-export class BlockchainComponent {
+export class BlockchainComponent implements OnInit{
   name: string = ""
   ngOnInit(){
   this.name =  sessionStorage.getItem('name') || ""

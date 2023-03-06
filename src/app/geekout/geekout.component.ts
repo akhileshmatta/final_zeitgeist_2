@@ -1,4 +1,4 @@
-import { Component, ElementRef, Directive } from '@angular/core';
+import { Component, ElementRef, Directive, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './geekout.component.html',
   styleUrls: ['./geekout.component.css']
 })
-export class GeekoutComponent {
+export class GeekoutComponent implements OnInit{
  name: string = ""
    ngOnInit(){
      //this.name =  localStorage.getItem('name') || ""

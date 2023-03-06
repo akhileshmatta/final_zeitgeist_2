@@ -1,4 +1,4 @@
-import { Component, ElementRef, Directive } from '@angular/core';
+import { Component, ElementRef, Directive, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './codewars.component.html',
   styleUrls: ['./codewars.component.css']
 })
-export class CodewarsComponent {
+export class CodewarsComponent implements OnInit {
   name : string = ""
   constructor ({nativeElement}: ElementRef<HTMLImageElement>,private router:Router ){
     const supports = 'loading' in HTMLImageElement.prototype;

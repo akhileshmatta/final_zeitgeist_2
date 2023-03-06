@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-registeredevents',
   templateUrl: './registeredevents.component.html',
   styleUrls: ['./registeredevents.component.css']
 })
-export class RegisteredeventsComponent {
+export class RegisteredeventsComponent implements OnInit{
   name : any = ""
   events : any = ""
   events_map: any = {

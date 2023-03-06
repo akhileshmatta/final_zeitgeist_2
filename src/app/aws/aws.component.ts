@@ -1,4 +1,4 @@
-import { Component, ElementRef, Directive } from '@angular/core';
+import { Component, ElementRef, Directive, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 @Component({
@@ -6,7 +6,7 @@ import { Location } from '@angular/common';
   templateUrl: './aws.component.html',
   styleUrls: ['./aws.component.css']
 })
-export class AwsComponent {
+export class AwsComponent implements OnInit {
   name: string = ""
   ngOnInit(){
     //const queryString = window.location.search

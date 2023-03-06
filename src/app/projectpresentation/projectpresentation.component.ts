@@ -1,11 +1,11 @@
-import { Component, ElementRef, Directive } from '@angular/core';
+import { Component, ElementRef, Directive, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-projectpresentation',
   templateUrl: './projectpresentation.component.html',
   styleUrls: ['./projectpresentation.component.css']
 })
-export class ProjectpresentationComponent {
+export class ProjectpresentationComponent implements OnInit{
  name: string = ""
    ngOnInit(){
      //this.name =  localStorage.getItem('name') || ""
