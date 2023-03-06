@@ -156,6 +156,7 @@
           <li><span class="dropdown-item l11" (click)="sponsors()">Sponsors</span></li>
           <li><span class="dropdown-item l11" (click)="gallery()">Gallery</span></li>
           <li><span class="dropdown-item l11" (click)="contact()">Contact Us</span></li>
+          <li *ngIf="name.length > 0"><span class="dropdown-item ll1" (click)="registeredevents()">Registered Events</span></li>
           <li *ngIf="name.length > 0"><span class="dropdown-item l11" (click)="logout()">Logout</span></li>
 
       </ul>
