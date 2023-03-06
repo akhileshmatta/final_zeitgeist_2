@@ -2,6 +2,7 @@ import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule} from '@angular/common/http';
 import { CountdownModule } from 'ngx-countdown';
+//import { Http } from '@angular/common/http';
 
 
 import { AppRoutingModule } from './app-routing.module';

@@ -10,7 +10,9 @@ export class AccomdationComponent {
 
   name: string = ""
   ngOnInit(){
-    this.name =  localStorage.getItem('name') || ""
+    //this.name =  localStorage.getItem('name') || ""
+    let data = JSON.parse(localStorage.getItem("q") || "")
+    this.name = data?.user_details.user_name || "";
    }
    constructor ({nativeElement}: ElementRef<HTMLImageElement>,private router: Router){
     const supports = 'loading' in HTMLImageElement.prototype;

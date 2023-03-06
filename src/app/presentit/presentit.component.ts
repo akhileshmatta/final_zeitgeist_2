@@ -9,7 +9,20 @@ import { Router } from '@angular/router';
 export class PresentitComponent {
   name: string = ""
    ngOnInit(){
-     this.name =  localStorage.getItem('name') || ""
+     //this.name =  localStorage.getItem('name') || ""
+  //    const queryString = window.location.search
+  //   const urlParams = new URLSearchParams(queryString)
+  //   let data : any = urlParams.get('q') || ""
+  //   console.log(urlParams)
+  //   console.log(data)
+  //   let dt = localStorage.getItem("q") || ""
+  //   if(dt.length == 0){
+  //     localStorage.setItem('q', data)
+  //   }
+
+  // console.log(JSON.parse(data))
+  let data = JSON.parse(localStorage.getItem("q") || "")
+  this.name = data?.user_details.user_name || "";
     }
 
   constructor ({nativeElement}: ElementRef<HTMLImageElement>, private router: Router){
@@ -23,6 +36,6 @@ export class PresentitComponent {
 
 }
 otherpay = () => this.router.navigateByUrl('/otherpay');
-registration = () => this.router.navigateByUrl('/Register');
+//registration = () => this.router.navigateByUrl('/Register');
 
 }

@@ -117,7 +117,7 @@
         <li><span (click)="home()"class = "ll1">Home </span></li>
         <li><span (click)="about()"class = "ll1">About </span></li>
         <li><span (click)="workshops()"class = "ll1">Workshops </span></li>
-        <li class="dropdown" data-hover="dropdown-toggle" data-toggle="dropdown"><a><span class="ll3">Events<span style="font-size: 13px;">▼</span></span><i class="bi bi-chevron-down"></i></a>
+        <li class="dropdown" ><a><span class="ll3">Events<span style="font-size: 13px;">▼</span></span><i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><span class="ll1 ll2" (click)="technical_events()">Technical Events</span></li>
 
@@ -130,7 +130,7 @@
         <li><span class="ll1" (click)="sponsors()">Sponsors</span></li>
         <li><span class="ll1" (click)="gallery()">Gallery</span></li>
         <li><span class="ll1" (click)="contact()">Contact Us</span></li>
-        <li *ngIf="name.length > 0" class="dropdown"><a><span class="ll3">My Profile<span style="font-size: 13px;">▼</span></span><i class="bi bi-chevron-down"></i></a>
+        <li *ngIf="name.length > 0" class="dropdown" ><a><span class="ll3">My Profile<span style="font-size: 13px;">▼</span></span><i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><span class="ll1 ll2" (click)="registeredevents()">Registered Events</span></li>
           </ul>

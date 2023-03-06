@@ -5,8 +5,8 @@ import { FooterComponent } from './footer/footer.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
-import { RegistrationFormComponent } from './registration-form/registration-form.component';
-import { LoginPageComponent } from './login-page/login-page.component';
+//import { RegistrationFormComponent } from './registration-form/registration-form.component';
+//import { LoginPageComponent } from './login-page/login-page.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { TechnicalEventsComponent } from './technical-events/technical-events.component';
@@ -42,8 +42,8 @@ import { RegisteredeventsComponent } from './registeredevents/registeredevents.c
 const routes: Routes = [
   {path: "", component:HomeComponent},
   //{ path: 'header', component: HeaderComponent },
-  {path: 'Register', component: RegistrationFormComponent},
-  {path: 'login', component: LoginPageComponent},
+  //{path: 'Register', component: RegistrationFormComponent},
+  //{path: 'login', component: LoginPageComponent},
  // {path: 'footer', component: FooterComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},

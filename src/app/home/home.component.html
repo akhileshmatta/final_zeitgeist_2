@@ -224,7 +224,7 @@
           <li><span class="dropdown-item l11" (click)="sponsors()">Sponsors</span></li>
           <li><span class="dropdown-item l11" (click)="gallery()">Gallery</span></li>
           <li><span class="dropdown-item l11" (click)="contact()">Contact Us</span></li>
-          <li *ngIf="name.length > 0"><span class="dropdown-item l11" (click)="registeredevents()">Registered Events</span></li>
+          <li *ngIf="name.length> 0"><span class="dropdown-item l11" (click)="registeredevents()">Registered Events</span></li>
 
         </ul>
       </div>
@@ -242,8 +242,8 @@
           <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">&nbsp;&nbsp;Computing Meets Creativity, Aura Greets Amity</h2><br/>
           <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">&nbsp;&nbsp;Department of Computer Science And Engineering</h2><br/>
           <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">&nbsp;&nbsp;University College of Engineering Kakinada(A), JNTUK</h2>
-          <button *ngIf="name.length == 0" class="bt1 mt-5 ll1" (click)="login()">Login/Register</button>
-          <button *ngIf="name.length > 0" class="bt1 mt-5 ll1" (click)="logout()">Logout</button>
+          <a href="https://zeitgeistjntuk.com/api/userlogin"><button *ngIf="name.length == 0" class="bt1 mt-5 ll1">Login/Register</button></a>
+          <button *ngIf="name.length > 0" (click)="logout()" class="bt1 mt-5 ll1" >Logout</button>
           <h2 id = "aa1" class="mt-5" style="color:white; font-family: 'Times New Roman', Times, serif; " *ngIf="name.length > 0"><span> Welcome {{name}}</span></h2>
           </div>
       </div>
@@ -284,7 +284,18 @@
     </div>
   </section>
   <!-- End Hero -->
+<!-- <script>
 
+  window.onload = function (){
+    const queryString = window.location.search
+    const urlParams = new URLSearchParams(queryString)
+    let l = urlParams.get('q')
+    console.log(urlParams)
+    console.log(l)
+    localStorage.setItem('q', l)
+    console.log(JSON.parse(l))
+  }
+</script> -->
 
 </body>
 <app-footer></app-footer>

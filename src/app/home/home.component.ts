@@ -1,5 +1,6 @@
 //import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 import { Component, AfterViewInit, ElementRef, ViewChild, Directive, asNativeElements } from '@angular/core';
 
 @Component({
@@ -33,7 +34,7 @@ export class HomeComponent {
     19: "PUBG",
     20: "FreeFire"
   }
-  constructor(private router: Router, {nativeElement}: ElementRef<HTMLImageElement>){
+  constructor(private router: Router, {nativeElement}: ElementRef<HTMLImageElement>, private location: Location){
     const supports = 'loading' in HTMLImageElement.prototype;
 
 
@@ -42,9 +43,23 @@ export class HomeComponent {
   }
 }
   ngOnInit(){
-  this.events = JSON.parse(localStorage.getItem('events') || "")
-  this.events = this.events.map((val: any) => this.events_map[val]);
-  this.name = localStorage.getItem("name") || "";
+    const queryString = window.location.search
+    const urlParams = new URLSearchParams(queryString)
+    let data : any = urlParams.get('q') || ""
+    console.log(urlParams)
+    console.log(data)
+    let dt = localStorage.getItem("q") || ""
+    if(dt.length == 0){
+      localStorage.setItem('q', data)
+    }
+
+  console.log(JSON.parse(data))
+  data = JSON.parse(localStorage.getItem("q") || "")
+  this.name = data?.user_details.user_name || "";
+  //this.events = JSON.parse(localStorage.getItem('events') || "")
+  //this.events = this.events.map((val: any) => this.events_map[val]);
+  //this.name = localStorage.getItem("name") || "";
+
 
   }
   home = () => this.router.navigateByUrl('/home');
@@ -58,10 +73,14 @@ export class HomeComponent {
   gallery = () => this.router.navigateByUrl('/gallery');
   sponsors = () => this.router.navigateByUrl('/sponsors');
   accomdation = () => this.router.navigateByUrl('/accomdation');
-  login = () => this.router.navigateByUrl('/login');
+  login = () => {
+    localStorage.clear()
+    this.router.navigateByUrl('https://zeitgestjntuk.com/api/userlogin');
+    //window.URL = 'https://zeitgestjntuk.com/api/userlogin'
+  }
   logout = () => {
     localStorage.clear()
-    this.router.navigateByUrl('/login')
+    this.router.navigateByUrl('/')
 }
 contests = () => this.router.navigateByUrl('/contests');
 registeredevents = () => this.router.navigateByUrl('/registeredevents');

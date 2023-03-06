@@ -25,7 +25,8 @@
           <button *ngIf="name.length > 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
         </div>
         <div class="text-center d-md-none">
-          <button *ngIf="name.length == 0" (click)="registration()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+          <a href="https://zeitgeistjntuk.com/api/userRegister"><button *ngIf="name.length == 0"  type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
+
         </div>
         <!-- Post content-->
         <section class="mb-5">
@@ -96,14 +97,15 @@
         </div>
         <div class="card-body"><span class="fa fa-phone">&nbsp;8688104905</span></div>
         <div class="card-body">
-          <span class="fa fa-envelope">&nbsp;hackathonzeitgeist@gmail.com</span>
+         <a href="mailto:hackathonzeitgeist@gmail.com" target="_blank">&nbsp;hackathonzeitgeist@gmail.com</a> <span class="fa fa-envelope"></span>
         </div>
       </div>
       <div class="text-center d-none d-md-block">
         <button *ngIf="name.length > 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
       </div>
       <div class="text-center d-none d-md-block">
-        <button *ngIf="name.length == 0" (click)="registration()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button>
+        <a href="https://zeitgeistjntuk.com/api/userRegister"><button *ngIf="name.length == 0" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
+
       </div>
     </div>
   </div>

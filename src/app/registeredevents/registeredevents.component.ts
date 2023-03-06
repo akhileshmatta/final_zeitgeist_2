@@ -31,9 +31,26 @@ export class RegisteredeventsComponent {
     20: "Free Fire"
   }
   ngOnInit(){
-    this.events = JSON.parse(localStorage.getItem('events') || "")
-    this.events = this.events.map((val: any) => this.events_map[val]);
-    this.name =  localStorage.getItem('name') || ""
+    //this.events = JSON.parse(localStorage.getItem('events') || "")
+    //this.events = this.events.map((val: any) => this.events_map[val]);
+    //this.name =  localStorage.getItem('name') || ""
+
+  //   const queryString = window.location.search
+  //   const urlParams = new URLSearchParams(queryString)
+  //   let data : any = urlParams.get('q') || ""
+  //   console.log(urlParams)
+  //   console.log(data)
+  //   let dt = localStorage.getItem("q") || ""
+  //   if(dt.length == 0){
+  //     localStorage.setItem('q', data)
+  //   }
+
+  // console.log(JSON.parse(data))
+  let data = JSON.parse(localStorage.getItem("q") || "")
+  this.name = data?.user_details.user_name || "";
+  this.events = data?.registerd_events || "";
+  this.events = this.events.map((val: any) => this.events_map[val]);
+
 
   }
 

@@ -19,7 +19,20 @@ export class HeaderComponent implements OnInit {
 
   }
   ngOnInit(){
-   this.name =  localStorage.getItem('name') || ""
+   //this.name =  localStorage.getItem('name') || ""
+  //  const queryString = window.location.search
+  //   const urlParams = new URLSearchParams(queryString)
+  //   let data : any = urlParams.get('q') || ""
+  //   console.log(urlParams)
+  //   console.log(data)
+  //   let dt = localStorage.getItem("q") || ""
+  //   if(dt.length == 0){
+  //     localStorage.setItem('q', data)
+  //   }
+
+  // console.log(JSON.parse(data))
+  let data = JSON.parse(localStorage.getItem("q") || "")
+  this.name = data?.user_details.user_name || "";
   }
 
   home = () => this.router.navigateByUrl('/home');
