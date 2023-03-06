@@ -19,7 +19,8 @@ export class WebdevComponent implements OnInit{
 }
 ngOnInit(){
 
-  this.name =  localStorage.getItem('name') || ""
+  //this.name =  localStorage.getItem('name') || ""
+  
 
 }
 otherpay = () => this.router.navigateByUrl('/otherpay');

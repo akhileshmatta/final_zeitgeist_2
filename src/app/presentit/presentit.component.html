@@ -22,10 +22,10 @@
           />
         </figure>
         <div class="text-center d-md-none">
-          <button *ngIf="name.length != 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register for Event</button>
+          <button *ngIf="name2 !== null" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register for Event</button>
         </div>
         <div class="text-center d-md-none">
-          <a *ngIf="name.length == 0" href="https://zeitgeistjntuk.com/api/userRegister"><button  type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
+          <a *ngIf="name2 === null" href="https://zeitgeistjntuk.com/api/userRegister"><button  type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
 
         </div>
         <!-- Post content-->
@@ -114,10 +114,10 @@
         </div>
       </div>
       <div class="text-center d-none d-md-block">
-        <button *ngIf="name.length != 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register for Event</button>
+        <button *ngIf="name2 !== null" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register for Event</button>
       </div>
       <div class="text-center d-none d-md-block">
-        <a *ngIf="name.length == 0" href="https://zeitgeistjntuk.com/api/userRegister"><button   type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
+        <a *ngIf="name2 === null" href="https://zeitgeistjntuk.com/api/userRegister"><button   type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
 
       </div>
     </div>

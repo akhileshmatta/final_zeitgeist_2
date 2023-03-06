@@ -7,7 +7,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./aws.component.css']
 })
 export class AwsComponent implements OnInit {
-  name: string = ""
+  name2: any = ""
   ngOnInit(){
     //const queryString = window.location.search
     //const urlParams = new URLSearchParams(queryString)
@@ -20,11 +20,21 @@ export class AwsComponent implements OnInit {
     //}
 
   //console.log(JSON.parse(data))
-  let data = JSON.parse(localStorage.getItem("q") || "")
-  this.name = data?.user_details.user_name || "";
+  //let data = JSON.parse(localStorage.getItem("q") || "")
+  //this.name = data?.user_details.user_name || "";
   //console.log(this.name);
 
     //this.name =  sessionStorage.getItem('name') || ""
+  let data3 : any = localStorage.getItem('q')
+  console.log(data3)
+
+  if (data3 == null){
+    this.name2 = null
+  }
+  else{
+    let data2 : any = JSON.parse(data3)
+    this.name2 = data2?.user_details.user_name || "";
+  }
    }
   constructor ({nativeElement}: ElementRef<HTMLImageElement>,private router: Router, private location: Location){
     const supports = 'loading' in HTMLImageElement.prototype;

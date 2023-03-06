@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  name: string = ""
+  name2: any = ""
   constructor(private router: Router,{nativeElement}: ElementRef<HTMLImageElement>){
     const supports = 'loading' in HTMLImageElement.prototype;
 
@@ -31,8 +31,18 @@ export class HeaderComponent implements OnInit {
   //   }
 
   // console.log(JSON.parse(data))
-  let data = JSON.parse(localStorage.getItem("q") || "")
-  this.name = data?.user_details.user_name || "";
+  let data3 : any = localStorage.getItem("q")
+  console.log(data3)
+
+  if (data3 === null){
+    this.name2 = null
+  }
+  else{
+    let data2 : any = JSON.parse(data3)
+    this.name2 = data2?.user_details.user_name || "";
+  }
+  //let data = JSON.parse(localStorage.getItem("q") || "")
+  //this.name = data?.user_details.user_name || "";
   }
 
   home = () => this.router.navigateByUrl('/home');

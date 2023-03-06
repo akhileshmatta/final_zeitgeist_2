@@ -12,7 +12,8 @@
           <!-- Post meta content-->
           <div class="text-muted fst-italic mb-2" style="font-weight: bold;">
             ** Certifications from IIT-Bombay **<br />
-            ** Guranteed Internships will be awarded  based on performance**
+            ** Guranteed Internships will be awarded  based on performance**<br />
+            **Workshop's  registration fee for team of four candidates is ₹5000**
           </div>
         </header>
         <!-- Preview image figure-->
@@ -23,12 +24,13 @@
             alt="..."
           />
         </figure>
-        <div class="text-center d-md-none">
-          <button *ngIf="name.length != 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register for Workshop</button>
+        <div *ngIf="name2 !== null" class="text-center d-md-none">
+          <button  (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register for Workshop</button>
         </div>
-        <div class="text-center d-md-none">
+
+        <div *ngIf="name2 === null" class="text-center d-md-none">
           <!-- <button *ngIf="name.length == 0" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button> -->
-          <a *ngIf="name.length == 0" href="https://zeitgeistjntuk.com/api/userRegister"><button  type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
+          <a  href="https://zeitgeistjntuk.com/api/userRegister"><button  type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
 
         </div>
 
@@ -163,11 +165,11 @@
 
         </div>
       </div>
-      <div class="text-center d-none d-md-block">
-        <button *ngIf="name.length != 0" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register for Workshop</button>
+      <div *ngIf="name2 !== null" class="text-center d-none d-md-block">
+        <button  (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register for Workshop</button>
       </div>
-      <div class="text-center d-none d-md-block">
-        <a *ngIf="name.length == 0" href="https://zeitgeistjntuk.com/api/userRegister"><button   type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
+      <div *ngIf="name2 === null" class="text-center d-none d-md-block">
+        <a href="https://zeitgeistjntuk.com/api/userRegister"><button   type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
 
       </div>
     </div>

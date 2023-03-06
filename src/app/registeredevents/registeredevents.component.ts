@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./registeredevents.component.css']
 })
 export class RegisteredeventsComponent implements OnInit{
-  name : any = ""
+  name2 : any = ""
   events : any = ""
   events_map: any = {
     1: "Block Chain",
@@ -46,10 +46,21 @@ export class RegisteredeventsComponent implements OnInit{
   //   }
 
   // console.log(JSON.parse(data))
-  let data = JSON.parse(localStorage.getItem("q") || "")
-  this.name = data?.user_details.user_name || "";
-  this.events = data?.registerd_events || "";
+  //let data = JSON.parse(localStorage.getItem("q") || "")
+  //this.name = data?.user_details.user_name || "";
+  let data3 : any = localStorage.getItem("q")
+  console.log(data3)
+
+  if (data3 == null){
+    this.name2 = null
+  }
+  else{
+    let data2 : any = JSON.parse(data3)
+    this.name2 = data2?.user_details.user_name || "";
+    this.events = data2?.registerd_events || "";
   this.events = this.events.map((val: any) => this.events_map[val]);
+  }
+
 
 
   }

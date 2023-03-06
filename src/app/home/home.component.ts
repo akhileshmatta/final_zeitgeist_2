@@ -10,7 +10,7 @@ import { Component, AfterViewInit, ElementRef, ViewChild, Directive, asNativeEle
 })
 export class HomeComponent implements OnInit{
 
-  name: string = ""
+  name2: string = ""
   events : any = ""
   events_map: any = {
     1: "Block Chain",
@@ -53,9 +53,19 @@ export class HomeComponent implements OnInit{
       localStorage.setItem('q', data)
     }
 
-  console.log(JSON.parse(data))
-  data = JSON.parse(localStorage.getItem("q") || "")
-  this.name = data?.user_details.user_name || "";
+  //console.log(JSON.parse(data))
+  let data3 : any = localStorage.getItem('q')
+  console.log(data3)
+
+  if (data3.length === 0){
+    this.name2 = ""
+  }
+  else{
+    let data2 : any = JSON.parse(data3)
+    this.name2 = data2?.user_details.user_name || "";
+  }
+  //data = JSON.parse(localStorage.getItem("q") || "")
+  //this.name = data?.user_details.user_name || "";
   //this.events = JSON.parse(localStorage.getItem('events') || "")
   //this.events = this.events.map((val: any) => this.events_map[val]);
   //this.name = localStorage.getItem("name") || "";

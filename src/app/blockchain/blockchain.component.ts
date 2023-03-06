@@ -8,9 +8,9 @@ import { Location } from '@angular/common';
   styleUrls: ['./blockchain.component.css']
 })
 export class BlockchainComponent implements OnInit{
-  name: string = ""
+  name2: any = ""
   ngOnInit(){
-  this.name =  sessionStorage.getItem('name') || ""
+  //this.name =  sessionStorage.getItem('name') || ""
   //   const queryString = window.location.search
   //   const urlParams = new URLSearchParams(queryString)
   //   let data : any = urlParams.get('q') || ""
@@ -22,8 +22,22 @@ export class BlockchainComponent implements OnInit{
   //   }
 
   // console.log(JSON.parse(data))
-   let data = JSON.parse(localStorage.getItem("q") || "")
-   this.name = data?.user_details.user_name || "";
+  let data3 : any = localStorage.getItem("q")
+  console.log(data3)
+
+  if (data3 == null){
+    this.name2 = null
+  }
+  else{
+    let data2 : any = JSON.parse(data3)
+    this.name2 = data2?.user_details.user_name || "";
+  }
+
+
+
+
+
+
    }
   constructor ({nativeElement}: ElementRef<HTMLImageElement>,private router: Router, private location: Location){
     const supports = 'loading' in HTMLImageElement.prototype;

@@ -164,7 +164,7 @@
 
 
 
-<body>
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
@@ -196,7 +196,7 @@
 
           <li><span class="ll1 " (click)="contact()">Contact Us</span></li>
 
-          <li class="dropdown" *ngIf="name.length != 0"><a><span class="ll3">My Profile<span style="font-size: 13px;">▼</span></span><i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown" *ngIf="name2.length != 0"><a><span class="ll3">My Profile<span style="font-size: 13px;">▼</span></span><i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><span class="ll1 ll2" (click)="registeredevents()">Registered Events</span>
               </li>
@@ -225,7 +225,7 @@
           <li><span class="dropdown-item l11" (click)="sponsors()">Sponsors</span></li>
           <li><span class="dropdown-item l11" (click)="gallery()">Gallery</span></li>
           <li><span class="dropdown-item l11" (click)="contact()">Contact Us</span></li>
-          <li *ngIf="name.length!= 0"><span class="dropdown-item l11" (click)="registeredevents()">Registered Events</span></li>
+          <li *ngIf="name2.length!= 0"><span class="dropdown-item l11" (click)="registeredevents()">Registered Events</span></li>
 
         </ul>
       </div>
@@ -243,10 +243,10 @@
           <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">&nbsp;&nbsp;Computing Meets Creativity, Aura Greets Amity</h2><br/>
           <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">&nbsp;&nbsp;Department of Computer Science And Engineering</h2><br/>
           <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">&nbsp;&nbsp;University College of Engineering Kakinada(A), JNTUK</h2>
-          <a *ngIf="name.length == 0" href="https://zeitgeistjntuk.com/api/userlogin"><button  class="bt1 mt-5 ll1">Login/Register</button></a>
+          <a *ngIf="name2.length == 0" href="https://zeitgeistjntuk.com/api/userlogin"><button  class="bt1 mt-5 ll1">Login/Register</button></a>
 
-          <button *ngIf="name.length != 0" (click)="logout()" class="bt1 mt-5 ll1">Logout</button>
-          <h2 id = "aa1" class="mt-5" style="color:white; font-family: 'Times New Roman', Times, serif; " *ngIf="name.length != 0"><span> Welcome {{name}}</span></h2>
+          <button *ngIf="name2.length != 0" (click)="logout()" class="bt1 mt-5 ll1">Logout</button>
+          <h2 id = "aa1" class="mt-5" style="color:white; font-family: 'Times New Roman', Times, serif; " *ngIf="name2.length != 0"><span> Welcome {{name2}}</span></h2>
           </div>
       </div>
 
@@ -299,6 +299,6 @@
   }
 </script> -->
 
-</body>
+
 <app-footer></app-footer>
 

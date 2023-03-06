@@ -22,7 +22,7 @@
           </figure>
           <div class="text-center d-md-none">
             <button
-              *ngIf="name.length > 0"
+              *ngIf="name2.length > 0"
               (click)="otherpay()"
               type="button"
               class="btn"
@@ -33,7 +33,7 @@
           </div>
           <div class="text-center d-md-none">
             <a href="https://zeitgeistjntuk.com/api/userRegister"><button
-              *ngIf="name.length == 0"
+              *ngIf="name2 === null"
               type="button"
               class="btn"
               style="background-color: #07294f; color: aliceblue"
@@ -127,7 +127,7 @@
         </div>
         <div class="text-center d-none d-md-block">
           <button
-            *ngIf="name.length != 0"
+            *ngIf="name2 !== null"
             (click)="otherpay()"
             type="button"
             class="btn"
@@ -137,7 +137,7 @@
           </button>
         </div>
         <div class="text-center d-none d-md-block">
-          <a  *ngIf="name.length == 0" href="https://zeitgeistjntuk.com/api/userRegister"><button
+          <a  *ngIf="name2 === null" href="https://zeitgeistjntuk.com/api/userRegister"><button
 
             type="button"
             class="btn"

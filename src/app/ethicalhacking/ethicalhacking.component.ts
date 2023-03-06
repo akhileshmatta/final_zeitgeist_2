@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./ethicalhacking.component.css']
 })
 export class EthicalhackingComponent implements OnInit{
-  name: string = ""
+  name2: any = ""
   ngOnInit(){
     //this.name =  localStorage.getItem('name') || ""
   //   const queryString = window.location.search
@@ -21,8 +21,18 @@ export class EthicalhackingComponent implements OnInit{
   //   }
 
   // console.log(JSON.parse(data))
-  let data = JSON.parse(localStorage.getItem("q") || "")
-  this.name = data?.user_details.user_name || "";
+  //let data = JSON.parse(localStorage.getItem("q") || "")
+  //this.name = data?.user_details.user_name || "";
+  let data3 : any = localStorage.getItem("q")
+  console.log(data3)
+
+  if (data3 == null){
+    this.name2 = null
+  }
+  else{
+    let data2 : any = JSON.parse(data3)
+    this.name2 = data2?.user_details.user_name || "";
+  }
    }
   constructor ({nativeElement}: ElementRef<HTMLImageElement>, private router: Router){
     const supports = 'loading' in HTMLImageElement.prototype;
