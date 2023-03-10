@@ -244,9 +244,10 @@
           <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">&nbsp;&nbsp;Department of Computer Science And Engineering</h2><br/>
           <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">&nbsp;&nbsp;University College of Engineering Kakinada(A), JNTUK</h2>
 
-          <a *ngIf="name2.length == 0" href="https://zeitgeistjntuk.com/api/userlogin"><button  class="bt1 mt-5 ll1">Login/Register</button></a>
-          <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">&nbsp;&nbsp;*Students of Any Discipline Are Welcome to Participate.*</h3>
+          <a *ngIf="name2.length == 0" href="https://zeitgeistjntuk.com/api/userlogin"><button  class="bt1 mt-5 ll1">Login/Register</button></a> <br />
+          <button class="bt1 mt-2 ll1" (click)="otherpay()">QR for Payment</button>
           <button *ngIf="name2.length != 0" (click)="logout()" class="bt1 mt-5 ll1">Logout</button>
+          <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">&nbsp;&nbsp;*Students of Any Discipline Are Welcome to Participate.*</h3>
           <h2 id = "aa1" class="mt-5" style="color:white; font-family: 'Times New Roman', Times, serif; " *ngIf="name2.length != 0"><span> Welcome {{name2}}</span></h2>
           </div>
       </div>

@@ -97,6 +97,7 @@ export class HomeComponent implements OnInit{
 }
 contests = () => this.router.navigateByUrl('/contests');
 registeredevents = () => this.router.navigateByUrl('/registeredevents');
+otherpay = () => this.router.navigateByUrl('/otherpay');
 
 
   date: any;
