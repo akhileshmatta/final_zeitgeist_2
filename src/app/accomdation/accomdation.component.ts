@@ -33,7 +33,8 @@ export class AccomdationComponent implements OnInit {
   }
 
 }
-   //otherpay = () => this.router.navigateByUrl('/otherpay');
+  otherpay = () => this.router.navigateByUrl('/otherpay');
 //registration = () => this.router.navigateByUrl('/Register');
 registrationpay = () => this.router.navigateByUrl('/registrationpay');
+
 }
