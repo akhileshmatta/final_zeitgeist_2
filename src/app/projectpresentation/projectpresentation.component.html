@@ -65,6 +65,7 @@
               The registration fee is
               <span class="fw-bolder"> ₹ 350/- </span> per project
             </p>
+            <p class="fs-6 mb-3">Combo offer (minimum 4 members) <span class="fw-bolder"> ₹ 250/-</span> per member</p>
 
             <h4 class="fw-bolder mb-3 mt-5">Instructions</h4>
             <ul class="fs-6 mb-3">
@@ -126,25 +127,10 @@
           </div>
         </div>
         <div class="text-center d-none d-md-block">
-          <button
-            *ngIf="name2 !== null"
-            (click)="otherpay()"
-            type="button"
-            class="btn"
-            style="background-color: #07294f; color: aliceblue"
-          >
-            Register for Event
-          </button>
+          <button *ngIf="name2 !== null" (click)="otherpay()" type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register for Event</button>
         </div>
         <div class="text-center d-none d-md-block">
-          <a  *ngIf="name2 === null" href="https://zeitgeistjntuk.com/api/userRegister"><button
-
-            type="button"
-            class="btn"
-            style="background-color: #07294f; color: aliceblue"
-          >
-            Register
-          </button></a>
+          <a *ngIf="name2 === null" href="https://zeitgeistjntuk.com/api/userRegister"><button   type="button" class="btn" style="background-color: #07294f; color: aliceblue;">Register</button></a>
 
         </div>
       </div>
